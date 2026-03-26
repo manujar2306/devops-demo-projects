@@ -1,0 +1,17 @@
+apiVersion: v1
+kind: Pod 
+metadata:
+   name: nginx_pod
+   labels:
+     app: web
+spec:
+   containers:
+     - name: nginxpod
+       image: nginx
+       ports:
+        - containerPort: 80
+      
+
+
+
+
