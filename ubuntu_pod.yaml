@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata: 
+   name: ubuntupod
+   labels: 
+     app : os
+spec:
+  containers:
+    - name : ubuntucon
+      image : ubuntu
+      command : ["/bin/bash" ,"c", "while true ; do echo hello world; sleep 100, done"]
+ 
